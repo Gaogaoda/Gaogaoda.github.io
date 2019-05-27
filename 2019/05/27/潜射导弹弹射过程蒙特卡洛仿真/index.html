@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>关于博主 · wkx&#39;s Studio</title>
+    <title>潜射导弹弹射过程蒙特卡洛仿真 · wkx&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,7 +203,7 @@
 </head>
 
     
-        <body class="about-body">
+        <body class="post-body">
     
     
 <header class="header">
@@ -211,6 +211,15 @@
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/">WKX的个人主页</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">潜射导弹弹射过程蒙特卡洛仿真</a>
+            </div>
+    </div>
     
     <a class="home-link" href="/">WKX的个人主页</a>
 </header>
@@ -229,23 +238,75 @@ height:50vh;
     <!-- 主页  -->
     
     
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/about-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            关于博主
+            潜射导弹弹射过程蒙特卡洛仿真
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class="post-intro-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="弹射">弹射</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="固体火箭发动机">固体火箭发动机</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="蒙特卡洛仿真">蒙特卡洛仿真</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Java">Java</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Java Swing">Java Swing</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">915</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/05/27</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -346,64 +407,101 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <!-- 不可以删除，否则会调用post的layout  -->
-<main class="main about-page">
+            <main class="main post-page">
     <article class="article-entry">
-        <h1 id="基本资料"><a href="#基本资料" class="headerlink" title="基本资料"></a>基本资料</h1><ul>
-<li>姓名：王凯璇</li>
-<li>民族：汉族</li>
-<li>出生年月：1995.05</li>
-<li>手机：(+86)188-2923-5035</li>
-<li>籍贯：陕西渭南</li>
-</ul>
+        <h1 id="1-项目简介"><a href="#1-项目简介" class="headerlink" title="1.项目简介"></a>1.项目简介</h1><p>针对潜射导弹三种弹射方法编写蒙特卡洛仿真算法，基于Java-Swing提供可视化界面，使用JFreeChart绘制导弹弹射过程包络线。实现了弹射过程可视化计算，方便研究人员进行弹射参数调优。</p>
 <hr>
-<h1 id="教育背景"><a href="#教育背景" class="headerlink" title="教育背景"></a>教育背景</h1><ul>
-<li>本科/西北工业大学/航天学院/飞行器动力工程/学士学位</li>
-<li>硕士/西北工业大学/航天学院/航空宇航推进理论与工程/硕士学位（保研）</li>
-</ul>
+<h1 id="2-技术细节"><a href="#2-技术细节" class="headerlink" title="2.技术细节"></a>2.技术细节</h1><h2 id="2-1-蒙特卡洛仿真"><a href="#2-1-蒙特卡洛仿真" class="headerlink" title="2.1 蒙特卡洛仿真"></a>2.1 蒙特卡洛仿真</h2><blockquote>
+<p>蒙特卡洛方法是一种采用统计抽样理论近似求解数学物理问题的数值模拟方法。当系统性能计算模型中各输入参数的散布特性已知，但模型过于复杂，难以用精确的数学模型描述输出性能参数的散布特性，可用这种随机模拟法近似计算出系统性能的散布状态。</p>
+</blockquote>
+<p>要想实现蒙特卡洛算法，其核心是伪随机数发生器，蒙特卡洛方法是一种采用统计抽样理论近似求解数学物理问题的数值模拟方法。当系统性能计算模型中各输入参数的散布特性已知，但模型过于复杂，难以用精确的数学模型描述输出性能参数的散布特性，可用这种随机模拟法近似计算出系统性能的散布状态。</p>
+
+<p>给定x0产生的随机数列{xi}称为LCG{a,c,m,x0}序列，主要的4个初始化参数为：</p>
+<p>a=25214903917(乘数multiplier)</p>
+<p>c=11(增量addend)</p>
+<p>m=2^48(模数mask)</p>
+<p>x0=种子seed</p>
+<p>其中a、c、m满足满周期的条件，同时效能是24，说明均匀性和随机性都很好</p>
+<p>因为a,c,m的参数都一样，所以相同的种子就会产生相同的随机序列 </p>
+<p>默认的种子是用时间+增长序列，同一个jvm里random的初始种子几乎不会重复，实践表明，这种方法产生的随机数在（0，1）上分布的均匀性和独立性非常好。</p>
+<p>在得到（0，1）上均匀分布的随机数后，利用Box-Muller算法便可得到服从标准正态分布的随机数，这种算法的主要方法是如果在 （0,1] 值域内有两个独立的随机数字 U1 和 U2，可以使用以下两个等式中的任一个算出一个正态分布的随机数字 Z：</p>
+<p>Z=R·cos(θ)</p>
+<p>正态值 Z 有一个等于 0 的平均值和一个等于 1 的标准偏差，可使用以下等式将 Z 映射到一个平均值为 m、标准偏差为 sd 的统计量 X：</p>
+<p>X=m+(Z·sd)</p>
+<p>这样我们就可以将任意拉偏参数转化为一组服从正态分布的随机数。</p>
+<h2 id="2-2弹射算法"><a href="#2-2弹射算法" class="headerlink" title="2.2弹射算法"></a>2.2弹射算法</h2><p>对于弹射过程进行内外弹道联合求解，具体求解过程如下：</p>
+<img src="/2019/05/27/潜射导弹弹射过程蒙特卡洛仿真/ejectequation1.jpg" title="内弹道公式">
+<img src="/2019/05/27/潜射导弹弹射过程蒙特卡洛仿真/ejectequation2.jpg" title="外弹道公式">
+<p>使用四阶Runge-Kutta法进行求解即可。</p>
+<h2 id="2-3-结果处理"><a href="#2-3-结果处理" class="headerlink" title="2.3 结果处理"></a>2.3 结果处理</h2><p>针对仿真得到的大量数据，一方面绘制关键参数的包络线与频数分布直方图，一方面根据数理统计的方法计算特征值的均值、方差及置信区间，方便设计人员参考。</p>
 <hr>
-<h1 id="技能荣誉"><a href="#技能荣誉" class="headerlink" title="技能荣誉"></a>技能荣誉</h1><h2 id="专业技能"><a href="#专业技能" class="headerlink" title="专业技能"></a>专业技能</h2><ul>
-<li>熟悉Java程序开发</li>
-<li>通过CET6(534分)<h2 id="荣誉奖励"><a href="#荣誉奖励" class="headerlink" title="荣誉奖励"></a>荣誉奖励</h2></li>
-<li>国际数模竞赛(MCM/ICM)一等奖</li>
-<li>院级优秀学生3次，校级优秀学生1次（专业前16%）</li>
-<li>航天罗麦奖学金三等奖（学院仅18人）</li>
-<li>研究生一等奖学金1次（专业前10%），研究生二等奖学金1次</li>
-</ul>
-<h1 id="科研项目"><a href="#科研项目" class="headerlink" title="科研项目"></a>科研项目</h1><h2 id="潜射导弹弹射过程蒙特卡洛仿真"><a href="#潜射导弹弹射过程蒙特卡洛仿真" class="headerlink" title="潜射导弹弹射过程蒙特卡洛仿真"></a>潜射导弹弹射过程蒙特卡洛仿真</h2><ul>
+<h1 id="3-软件实现"><a href="#3-软件实现" class="headerlink" title="3. 软件实现"></a>3. 软件实现</h1><p>软件使用NetBean IDE8.3进行开发，采用Java语言，基于Java Swing进行GUI设计，绘图使用JFreeChart插件，实现效果如下：</p>
+<img src="/2019/05/27/潜射导弹弹射过程蒙特卡洛仿真/main.png" title="主界面">
+<img src="/2019/05/27/潜射导弹弹射过程蒙特卡洛仿真/grain.png" title="读入装药数据">
+<img src="/2019/05/27/潜射导弹弹射过程蒙特卡洛仿真/result1.png" title="结果1">
+<img src="/2019/05/27/潜射导弹弹射过程蒙特卡洛仿真/result2.png" title="结果2">
+<hr>
+<h1 id="4-技术总结"><a href="#4-技术总结" class="headerlink" title="4. 技术总结"></a>4. 技术总结</h1><ul>
 <li>针对潜射导弹三种弹射方法编制蒙特卡洛仿真程序；</li>
 <li>基于Java-Swing提供可视化界面；</li>
-<li>解决了设计人员调优慢，优化周期长的问题，使得弹射结果快速可视化。<h2 id="某型号导弹发动机快速全过程内弹道仿真"><a href="#某型号导弹发动机快速全过程内弹道仿真" class="headerlink" title="某型号导弹发动机快速全过程内弹道仿真"></a>某型号导弹发动机快速全过程内弹道仿真</h2></li>
-<li>基于零维内弹道算法编写内弹道仿真程序；</li>
-<li>根据试车数据进行关键参数辨识；</li>
-<li>使用Java语言编写B/S与C/S程序。<h2 id="双燃速推进剂参数快速优化软件"><a href="#双燃速推进剂参数快速优化软件" class="headerlink" title="双燃速推进剂参数快速优化软件"></a>双燃速推进剂参数快速优化软件</h2></li>
-<li>结合推进剂厂商生产能力，针对弹射用推进剂进行全自动优化设计，优化目标为导弹弹射过程过载低且平稳；</li>
-<li>软件设计优化参数可变，优化目标可调，优化结果可实时展现；</li>
-<li>基于Java-Swing提供操作界面。<h2 id="液体火箭发动机CEA热力学在线计算"><a href="#液体火箭发动机CEA热力学在线计算" class="headerlink" title="液体火箭发动机CEA热力学在线计算"></a>液体火箭发动机CEA热力学在线计算</h2></li>
-<li>基于NASA CEA热力学计算程序，提供简单友好的在线热力学计算平台；</li>
-<li>基于Java语言，主要技术栈为SpringBoot，数据库使用MySQL。<h2 id="中国宇航学会固体推进专业委员会第三十五届学术年会"><a href="#中国宇航学会固体推进专业委员会第三十五届学术年会" class="headerlink" title="中国宇航学会固体推进专业委员会第三十五届学术年会"></a>中国宇航学会固体推进专业委员会第三十五届学术年会</h2></li>
-<li>弹射用燃气发生器变燃速装药设计优化方法（会议论文）</li>
+<li>解决了设计人员调优慢，优化周期长的问题，使得弹射结果快速可视化。</li>
 </ul>
-<h1 id="社会经历"><a href="#社会经历" class="headerlink" title="社会经历"></a>社会经历</h1><ul>
-<li>西北工业大学航天学院班级学习委员；(2014.09-2017.09)</li>
-<li>航天科普志愿宣讲宝鸡行；(2014.07-2014.08)</li>
-<li>渭南市科技局大学生实习；(2015.02-2015.03)</li>
-<li>燃烧、热结构与内流场国防科技重点实验室实验教学助理()</li>
-</ul>
-<hr>
-<h1 id="特长爱好"><a href="#特长爱好" class="headerlink" title="特长爱好"></a>特长爱好</h1><p>羽毛球，摄影，吉他</p>
-<h1 id="技能清单"><a href="#技能清单" class="headerlink" title="技能清单"></a>技能清单</h1><p>以下均为我项目使用的技能</p>
-<ul>
-<li>JavaWeb框架：Spring//SpringMVC/Spring Data JPA/SpringBoot/SpringCloud</li>
-<li>前端框架：Bootstrap/jQuery</li>
-<li>数据库相关：MySQL/Oracle</li>
-<li>版本管理、文档和自动化部署工具：Svn/Git/Maven</li>
-<li>单元测试：Junit</li>
-</ul>
-<hr>
-<h1 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h1><p>感谢您花时间阅读我的简历，期待能有机会和您共事。</p>
 
     </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者：<a href="https://wtriumphymy.github.io">WKX</a>
+            </p><p>原文链接：<a href="https://wtriumphymy.github.io/2019/05/27/潜射导弹弹射过程蒙特卡洛仿真/">https://wtriumphymy.github.io/2019/05/27/潜射导弹弹射过程蒙特卡洛仿真/</a>
+            </p><p>发表日期：<a href="https://wtriumphymy.github.io/2019/05/27/潜射导弹弹射过程蒙特卡洛仿真/">五月 27日 2019, 9:26:37 晚上</a>
+            </p><p>更新日期：<a href="https://wtriumphymy.github.io/2019/05/27/潜射导弹弹射过程蒙特卡洛仿真/">May 27th 2019, 11:26:32 pm</a>
+            </p><p>版权声明：本文由WKX创作，转载请声明来源</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2019/05/25/项目总结/" title="我的项目总结">
+                    <div class="prevTitle">我的项目总结</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+    <div id="comment"></div>
+    <script>
+    new Valine({
+        el: '#comment' ,
+        notify:false, 
+        verify:false, 
+        appId: "0Cs6NhtNkuBSDXmRdYFOrV1p-gzGzoHsz",
+        appKey: "sRaAw5qXYvCrG7CiFsf7rMlm",
+        placeholder: "请输入评论",
+        path:window.location.pathname, 
+        avatar:'mm' 
+    });
+    </script>
+
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -492,6 +590,24 @@ height:50vh;
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-项目简介"><span class="toc-number">1.</span> <span class="toc-text">1.项目简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-技术细节"><span class="toc-number">2.</span> <span class="toc-text">2.技术细节</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-蒙特卡洛仿真"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 蒙特卡洛仿真</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2弹射算法"><span class="toc-number">2.2.</span> <span class="toc-text">2.2弹射算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-结果处理"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 结果处理</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-软件实现"><span class="toc-number">3.</span> <span class="toc-text">3. 软件实现</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-技术总结"><span class="toc-number">4.</span> <span class="toc-text">4. 技术总结</span></a></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -629,6 +745,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
