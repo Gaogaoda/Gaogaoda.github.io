@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>潜射导弹弹射过程蒙特卡洛仿真 · wkx&#39;s Studio</title>
+    <title>CEA热力学在线计算 · wkx&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/">WKX的个人主页</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">潜射导弹弹射过程蒙特卡洛仿真</a>
+                <a href="#" class="post-name">CEA热力学在线计算</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            潜射导弹弹射过程蒙特卡洛仿真
+            CEA热力学在线计算
             <!-- 404 -->
             
         </h1>
@@ -266,26 +266,22 @@ height:50vh;
                 
                     <div class="post-intro-tags">
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="固体火箭发动机">固体火箭发动机</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="热力学计算">热力学计算</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="Java">Java</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="CEA">CEA</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="Java Swing">Java Swing</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="弹射">弹射</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="蒙特卡洛仿真">蒙特卡洛仿真</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="Spring Boot">Spring Boot</a>
     
 </div>
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">915</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">749</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2017/12/31</span>
+                    <span class="post-intro-time">2018/10/28</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -409,42 +405,25 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h1 id="1-项目简介"><a href="#1-项目简介" class="headerlink" title="1.项目简介"></a>1.项目简介</h1><p>针对潜射导弹三种弹射方法编写蒙特卡洛仿真算法，基于Java-Swing提供可视化界面，使用JFreeChart绘制导弹弹射过程包络线。实现了弹射过程可视化计算，方便研究人员进行弹射参数调优。</p>
+        <h1 id="1-项目简介"><a href="#1-项目简介" class="headerlink" title="1.项目简介"></a>1.项目简介</h1><p>CEA程序由NASA研究开发, 用于热力学、物理化学反应的计算与分析, 如对固体推进剂组合能量特性分析, 新型氧化剂的热化学性能计算。CEA程序一方面是其计算结果成为了相关航空航天研究人员的标准参照;另一方面逐步成为了一些涉及热力学与化学平衡计算仿真平台的编程基础库。</p>
+<p>现有的CEA程序需要下载安装到桌面电脑, 极大地限制了使用环境, 并且在较新的操作系统中兼容性不佳。运用于工程计算时, 通常需要进行二次开发，然而该程序没有提供标准应用程序编程接口(Application Programming Interface, API) , 为开发人员增加了难度。</p>
+<p>基于上述问题, 本文提出采用基于Web技术实现CEA桌面程序的二次开发, 提高了程序的便携性, 为涉及化学平衡问题的研究者提供开放便利的计算平台。并且为相关开发人员提供了API, 减少了二次开发的工作量。</p>
 <hr>
-<h1 id="2-技术细节"><a href="#2-技术细节" class="headerlink" title="2.技术细节"></a>2.技术细节</h1><h2 id="2-1-蒙特卡洛仿真"><a href="#2-1-蒙特卡洛仿真" class="headerlink" title="2.1 蒙特卡洛仿真"></a>2.1 蒙特卡洛仿真</h2><blockquote>
-<p>蒙特卡洛方法是一种采用统计抽样理论近似求解数学物理问题的数值模拟方法。当系统性能计算模型中各输入参数的散布特性已知，但模型过于复杂，难以用精确的数学模型描述输出性能参数的散布特性，可用这种随机模拟法近似计算出系统性能的散布状态。</p>
-</blockquote>
-<p>要想实现蒙特卡洛算法，其核心是伪随机数发生器，蒙特卡洛方法是一种采用统计抽样理论近似求解数学物理问题的数值模拟方法。当系统性能计算模型中各输入参数的散布特性已知，但模型过于复杂，难以用精确的数学模型描述输出性能参数的散布特性，可用这种随机模拟法近似计算出系统性能的散布状态。</p>
-
-<p>给定x0产生的随机数列{xi}称为LCG{a,c,m,x0}序列，主要的4个初始化参数为：</p>
-<p>a=25214903917(乘数multiplier)</p>
-<p>c=11(增量addend)</p>
-<p>m=2^48(模数mask)</p>
-<p>x0=种子seed</p>
-<p>其中a、c、m满足满周期的条件，同时效能是24，说明均匀性和随机性都很好</p>
-<p>因为a,c,m的参数都一样，所以相同的种子就会产生相同的随机序列 </p>
-<p>默认的种子是用时间+增长序列，同一个jvm里random的初始种子几乎不会重复，实践表明，这种方法产生的随机数在（0，1）上分布的均匀性和独立性非常好。</p>
-<p>在得到（0，1）上均匀分布的随机数后，利用Box-Muller算法便可得到服从标准正态分布的随机数，这种算法的主要方法是如果在 （0,1] 值域内有两个独立的随机数字 U1 和 U2，可以使用以下两个等式中的任一个算出一个正态分布的随机数字 Z：</p>
-<p>Z=R·cos(θ)</p>
-<p>正态值 Z 有一个等于 0 的平均值和一个等于 1 的标准偏差，可使用以下等式将 Z 映射到一个平均值为 m、标准偏差为 sd 的统计量 X：</p>
-<p>X=m+(Z·sd)</p>
-<p>这样我们就可以将任意拉偏参数转化为一组服从正态分布的随机数。</p>
-<h2 id="2-2弹射算法"><a href="#2-2弹射算法" class="headerlink" title="2.2弹射算法"></a>2.2弹射算法</h2><p>对于弹射过程进行内外弹道联合求解，具体求解过程如下：</p>
-<img src="/2017/12/31/潜射导弹弹射过程蒙特卡洛仿真/ejectequation1.jpg" title="内弹道公式">
-<img src="/2017/12/31/潜射导弹弹射过程蒙特卡洛仿真/ejectequation2.jpg" title="外弹道公式">
-<p>使用四阶Runge-Kutta法进行求解即可。</p>
-<h2 id="2-3-结果处理"><a href="#2-3-结果处理" class="headerlink" title="2.3 结果处理"></a>2.3 结果处理</h2><p>针对仿真得到的大量数据，一方面绘制关键参数的包络线与频数分布直方图，一方面根据数理统计的方法计算特征值的均值、方差及置信区间，方便设计人员参考。</p>
+<h1 id="2-技术细节"><a href="#2-技术细节" class="headerlink" title="2.技术细节"></a>2.技术细节</h1><h2 id="2-1-CEA化学平衡计算程序"><a href="#2-1-CEA化学平衡计算程序" class="headerlink" title="2.1 CEA化学平衡计算程序"></a>2.1 CEA化学平衡计算程序</h2><p>NASA CEA 程序官网的Windows程序包提供了３个压缩包，其中CEA+Fortran.zip包含CEA算法程序的Fortran源码文件，CEAexec－win.zip包含CEA程序的算法可执行文件和所需的数据文件，CEAgui-jar.zip为CEA用户界面包。将后面两者解压放到同一个文件夹，运行.bat脚本便能执行CEA图形程序。整个程序运行过程中涉及到的文件如图所示。通过分析，原始文件中除去“trans.lib”、“thermo.lib”、“FCEA2.exe”，其余都是为配置中间生成的问题文件“<em>.inp”服务，将文件“</em>.inp”作为核心算法程序“FCEA2.exe”的输入便可得到结果输出文件“<em>.out</em>”</p>
+<img src="/2018/10/28/CEA热力学在线计算/ceafile.png" title="包含文件">
+<img src="/2018/10/28/CEA热力学在线计算/ceaflow.png" title="CEA计算流程">
+<h2 id="2-2-Java-Web移植"><a href="#2-2-Java-Web移植" class="headerlink" title="2.2 Java Web移植"></a>2.2 Java Web移植</h2><p>基于Spring Boot编写服务器端程序，依据上图的流程对相应exe程序进行依次调用，之后读取结果文件并将结果返回前端。</p>
+<p>需要注意的是由于input.txt文件的唯一性，因此存在并发安全性问题，程序在此方面的处理方法是凡是涉及修改文件的方法均加上synchronized关键词，并与调用FCEA2.exe在同一代码块，以保证被调用的配置文件与前端输入的一致性。</p>
+<p>程序主要类如图：</p>
+<img src="/2018/10/28/CEA热力学在线计算/CEADiagram.png" title="主要类图">
 <hr>
-<h1 id="3-软件实现"><a href="#3-软件实现" class="headerlink" title="3. 软件实现"></a>3. 软件实现</h1><p>软件使用NetBean IDE8.3进行开发，采用Java语言，基于Java Swing进行GUI设计，绘图使用JFreeChart插件，实现效果如下：</p>
-<img src="/2017/12/31/潜射导弹弹射过程蒙特卡洛仿真/main.png" title="主界面">
-<img src="/2017/12/31/潜射导弹弹射过程蒙特卡洛仿真/grain.png" title="读入装药数据">
-<img src="/2017/12/31/潜射导弹弹射过程蒙特卡洛仿真/result1.png" title="结果1">
-<img src="/2017/12/31/潜射导弹弹射过程蒙特卡洛仿真/result2.png" title="结果2">
+<h1 id="3-软件实现"><a href="#3-软件实现" class="headerlink" title="3. 软件实现"></a>3. 软件实现</h1><p>使用IntelliJ IDEA进行开发，前端CSS/HTML框架使用Bootstrap；JavaScript库使用JQuery；后台使用Spring Boot框架；使用thymeleaf进行页面静态化；持久层框架使用Spring Data JPA；数据库采用MySQL。</p>
+<img src="/2018/10/28/CEA热力学在线计算/html.png" title="主界面">
+<p>GitHub项目地址：<a href="https://github.com/WTriumphYMY/LRE_CEA" target="_blank" rel="noopener">LRE_CEA</a></p>
 <hr>
 <h1 id="4-技术总结"><a href="#4-技术总结" class="headerlink" title="4. 技术总结"></a>4. 技术总结</h1><ul>
-<li>针对潜射导弹三种弹射方法编制蒙特卡洛仿真程序；</li>
-<li>基于Java-Swing提供可视化界面；</li>
-<li>解决了设计人员调优慢，优化周期长的问题，使得弹射结果快速可视化。</li>
+<li>基于NASA CEA热力学计算程序，提供简单友好的在线热力学计算平台；</li>
+<li>基于Spring Boot技术栈提供B/S程序。</li>
 </ul>
 
     </article>
@@ -452,9 +431,9 @@ height:50vh;
     
         <div class="license-wrapper">
             <p>原文作者：<a href="https://wtriumphymy.github.io">WKX</a>
-            </p><p>原文链接：<a href="https://wtriumphymy.github.io/2017/12/31/潜射导弹弹射过程蒙特卡洛仿真/">https://wtriumphymy.github.io/2017/12/31/潜射导弹弹射过程蒙特卡洛仿真/</a>
-            </p><p>发表日期：<a href="https://wtriumphymy.github.io/2017/12/31/潜射导弹弹射过程蒙特卡洛仿真/">December 31st 2017, 9:26:37 pm</a>
-            </p><p>更新日期：<a href="https://wtriumphymy.github.io/2017/12/31/潜射导弹弹射过程蒙特卡洛仿真/">May 28th 2019, 9:29:28 pm</a>
+            </p><p>原文链接：<a href="https://wtriumphymy.github.io/2018/10/28/CEA热力学在线计算/">https://wtriumphymy.github.io/2018/10/28/CEA热力学在线计算/</a>
+            </p><p>发表日期：<a href="https://wtriumphymy.github.io/2018/10/28/CEA热力学在线计算/">October 28th 2018, 9:45:28 pm</a>
+            </p><p>更新日期：<a href="https://wtriumphymy.github.io/2018/10/28/CEA热力学在线计算/">May 31st 2019, 4:56:44 pm</a>
             </p><p>版权声明：本文由WKX创作，转载请声明来源</p>
         </div>
     
@@ -462,13 +441,13 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href="/2018/05/27/固体火箭发动机快速全过程内弹道仿真/" title="固体火箭发动机快速全过程内弹道仿真">
-                    <div class="nextTitle">固体火箭发动机快速全过程内弹道仿真</div>
-                </a>
-            
         </li>
         <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2018/08/10/双燃速推进剂参数快速优化软件/" title="双燃速推进剂参数快速优化软件">
+                    <div class="prevTitle">双燃速推进剂参数快速优化软件</div>
+                </a>
             
         </li>
     </ul>
@@ -606,7 +585,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-项目简介"><span class="toc-number">1.</span> <span class="toc-text">1.项目简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-技术细节"><span class="toc-number">2.</span> <span class="toc-text">2.技术细节</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-蒙特卡洛仿真"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 蒙特卡洛仿真</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2弹射算法"><span class="toc-number">2.2.</span> <span class="toc-text">2.2弹射算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-结果处理"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 结果处理</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-软件实现"><span class="toc-number">3.</span> <span class="toc-text">3. 软件实现</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-技术总结"><span class="toc-number">4.</span> <span class="toc-text">4. 技术总结</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-项目简介"><span class="toc-number">1.</span> <span class="toc-text">1.项目简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-技术细节"><span class="toc-number">2.</span> <span class="toc-text">2.技术细节</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-CEA化学平衡计算程序"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 CEA化学平衡计算程序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-Java-Web移植"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 Java Web移植</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-软件实现"><span class="toc-number">3.</span> <span class="toc-text">3. 软件实现</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-技术总结"><span class="toc-number">4.</span> <span class="toc-text">4. 技术总结</span></a></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
